@@ -1,9 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { useAuth } from "./AuthContext";
 import api from "../api/axios";
-
-
-const API_URL = 'http://localhost:5000/api';
 
 // Books Context
 const BooksContext = createContext();
