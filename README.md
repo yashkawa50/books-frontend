@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# 📘 Project Setup and Usage Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Follow the steps below to set up and run the project on your local system.
 
-## Available Scripts
+## 1. Clone the Project
+First, clone this repository to your local machine using the command below:
+```bash
+git clone <repository-url>
+cd <project-folder>
+```
 
-In the project directory, you can run:
+## 2. Create a `.env` File
+Inside the root directory of your project, create a new file named `.env`.  
+Add the following line inside it:
+```
+REACT_APP_API_URL=http://localhost:5000/
+```
+This line sets up the base URL for connecting the React frontend to your backend API (which runs on port 5000 by default).
 
-### `npm start`
+## 3. Install Dependencies
+Before running the project, install all required dependencies using:
+```bash
+npm install
+```
+This command will download and install all the necessary packages listed in the `package.json` file.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 4. Start the React Development Server
+Once the dependencies are installed, start the React app by running:
+```bash
+npm run dev
+```
+This will start the development server, and you can open the app in your browser (usually at `http://localhost:3000/`).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧭 Application Routes and Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here’s how you can navigate and use the app:
 
-### `npm run build`
+- **`/register`** – Go to this page to create a new user account.  
+  You’ll need to fill in your details to register successfully.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`/login`** – After registering, visit this page to log in with your credentials.  
+  Once logged in, you can access other features of the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`/add-book`** – Use this page to add a new book to the system.  
+  You’ll be able to enter book details like title, author, etc.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **`/books`** – This page displays the list of all books that have been added.  
+  You can view and manage your added books here.
