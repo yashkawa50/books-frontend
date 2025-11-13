@@ -33,18 +33,19 @@ export const BookList = () => {
 
   if (books.length === 0) {
     return (
-      <div className="flex flex-col justify-center items-center h-[100vh] bg-gray-100">
-        <div className="text-center py-12 bg-white rounded-lg shadow-md w-[400px]">
-          <BookOpen className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-          <p className="text-gray-600 text-lg mb-6">No books found!</p>
+      <div className="flex justify-center items-center min-h-screen bg-gray-100">
+        <div className="bg-white rounded-lg shadow-md w-[400px] p-8 flex flex-col items-center">
+          <BookOpen className="w-16 h-16 text-gray-400 mb-4" />
+          <p className="text-gray-600 text-lg mb-6 text-center">No books found!</p>
           <button
             onClick={() => navigate("/add-book")}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg w-full transition"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg w-full transition text-center"
           >
             Add Book →
           </button>
         </div>
       </div>
+
     );
   }
 
